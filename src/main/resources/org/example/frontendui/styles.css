@@ -1,0 +1,11 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right bottom,#0037CF,#E839F6) ;
+}
+.login{
+    -fx-background-radius: 10T;
+}
+.input{
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+
+}

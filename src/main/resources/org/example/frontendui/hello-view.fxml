@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="668.0" styleClass="backgroundColor" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendui.HelloController">
+   <children>
+      <Pane layoutX="98.0" layoutY="93.0" prefHeight="528.0" prefWidth="473.0" style="-fx-border-radius: 18; -fx-background-radius: 18; -fx-background-color: white;" styleClass="login" stylesheets="@../../../../java/org/example/frontendui/styles.css">
+         <children>
+            <Text fx:id="welcome" layoutX="101.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="272.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="41.0" />
+               </font>
+            </Text>
+            <Line fx:id="lines" endX="372.0" layoutX="100.0" layoutY="102.0" startX="-100.0" />
+            <TextField fx:id="text" layoutX="46.0" layoutY="178.0" opacity="0.95" prefHeight="52.0" prefWidth="381.0" promptText="Username" styleClass="input" stylesheets="@../../../../java/org/example/frontendui/styles.css">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="pass" layoutX="46.0" layoutY="291.0" prefHeight="52.0" prefWidth="381.0" promptText="Password" style="-fx-border-width: 0 0 10 0; -fx-border-color: transparent;" styleClass="input" stylesheets="@../../../../java/org/example/frontendui/styles.css">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </PasswordField>
+            <Hyperlink fx:id="hype" layoutX="46.0" layoutY="373.0" prefHeight="28.0" prefWidth="130.0" text="Forgot Password?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="btn" layoutX="101.0" layoutY="435.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="37.0" prefWidth="272.0" style="-fx-background-color: #d5d5d5; -fx-font-weight: 800; -fx-text-fill: black; -fx-font-size: 20px; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 100; -fx-line-spacing: 50px;" styleClass="loginbtn" text="Login">
+               <font>
+                  <Font name="System Bold" size="8.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@styles.css" />
+                  <URL value="@../../../../java/org/example/frontendui/styles.css" />
+               </stylesheets>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>
